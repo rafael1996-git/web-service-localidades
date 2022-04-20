@@ -38,7 +38,18 @@ public class Controlador {
 
 	 public static Integer otro;
 
-	 
+	 /**
+		 * Metodo que brinda el servicio de la consulta de Localidades con parametros ClaveEntidad,ClaveMunicipio tipo GET
+		 * 
+		 * 
+		 * http://localhost:8080/WebServiceLocalidad/Clave?ClaveEntidad=9&ClaveMunicipio=12
+		 * 
+		 * 
+		 * @param clave_entidad 
+		 * @param ClaveMunicipio 
+		 * @return retorna la lista 
+		 * @throws Exception si no logra obtener la conexion
+		 */
 	
 	 @GetMapping(value = "/Clave")
 		public ResponseOk  getEntidad(@RequestParam  (required = false) Integer ClaveEntidad,@RequestParam (required = false)Integer ClaveMunicipio)throws Exception{
